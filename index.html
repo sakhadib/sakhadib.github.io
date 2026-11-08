@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<title>Adib Sakhawat</title>
+<meta name="description" content="Adib Sakhawat — NLP researcher working on low-resource languages, LLM evaluation, LLM safety and the political behaviour of language models. Applying for PhD positions starting Fall 2027.">
+<meta name="author" content="Adib Sakhawat">
+<meta property="og:title" content="Adib Sakhawat">
+<meta property="og:description" content="NLP · LLM evaluation · LLM safety · low-resource languages. Applying for PhD positions, Fall 2027.">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/111243915?v=4">
+<meta property="og:url" content="https://sakhadib.github.io/">
+<meta property="og:type" content="profile">
+<link rel="canonical" href="https://sakhadib.github.io/">
+<link rel="icon" href="https://avatars.githubusercontent.com/u/111243915?v=4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Adib Sakhawat",
+  "url": "https://sakhadib.github.io/",
+  "image": "https://avatars.githubusercontent.com/u/111243915?v=4",
+  "alumniOf": "Islamic University of Technology",
+  "knowsAbout": ["Natural Language Processing", "LLM Evaluation", "AI Safety", "Low-resource NLP", "Bangla"],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=usvtpskAAAAJ",
+    "https://orcid.org/0009-0005-3549-8616",
+    "https://github.com/sakhadib",
+    "https://openreview.net/profile?id=~Adib_Sakhawat1",
+    "https://www.semanticscholar.org/author/Adib-Sakhawat/2403988374",
+    "https://www.linkedin.com/in/sakhadib"
+  ]
+}
+</script>
+<style>
+:root {
+  --bg: #ffffff;
+  --side: #faf8f5;
+  --fg: #1c1b19;
+  --muted: #5f5c56;
+  --faint: #8e8a83;
+  --rule: #e8e4dc;
+  --accent: #9a3412;
+  --accent-soft: #fdf1ea;
+  --chip: #f3f0ea;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--serif); font-size: 16.5px; line-height: 1.55; }
+a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; transition: color .15s, text-decoration-color .15s; }
+a:hover { color: var(--accent); text-decoration-color: currentColor; }
+p { margin: 0 0 .7em; }
+
+.page { display: grid; grid-template-columns: 300px 1fr; min-height: 100vh; }
+main > * { max-width: 1120px; }
+
+/* sidebar */
+aside { background: var(--side); border-right: 1px solid var(--rule); padding: 36px 28px; }
+.side-inner { position: sticky; top: 36px; }
+aside img { width: 112px; height: 112px; border-radius: 50%; object-fit: cover; background: var(--chip); display: block; margin-bottom: 16px; overflow: hidden; color: transparent; }
+h1 { font-size: 1.75rem; font-weight: 600; line-height: 1.15; margin: 0 0 6px; letter-spacing: -.01em; }
+.role { font-family: var(--sans); font-size: .84rem; color: var(--muted); margin: 0 0 16px; line-height: 1.5; }
+.links { list-style: none; padding: 0; margin: 0 0 18px; font-family: var(--sans); font-size: .84rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3px 12px; }
+.links a { text-decoration: none; color: var(--muted); }
+.links a:hover { color: var(--accent); }
+.callout { padding: 10px 12px; border-left: 3px solid var(--accent); background: var(--accent-soft); font-family: var(--sans); font-size: .82rem; line-height: 1.5; margin-bottom: 22px; }
+.callout strong { font-weight: 600; }
+.side-block { margin-bottom: 18px; font-size: .9rem; }
+.side-block h2 { margin-bottom: 8px; }
+.side-block .row { margin-bottom: 8px; line-height: 1.4; }
+.side-block .row b { font-weight: 600; }
+.side-block .row span { display: block; font-family: var(--sans); font-size: .76rem; color: var(--faint); margin-top: 1px; }
+
+/* main */
+main { padding: 36px 44px 40px; min-width: 0; }
+h2 { font-family: var(--sans); font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--faint); margin: 0 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); }
+section { margin-bottom: 30px; }
+.about { font-size: 1.04rem; max-width: 900px; }
+
+.themes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.theme h3 { font-size: .98rem; font-weight: 600; margin: 0 0 4px; line-height: 1.3; }
+.theme p { font-size: .87rem; color: var(--muted); margin: 0; line-height: 1.5; }
+.theme .num { font-family: var(--sans); font-size: .7rem; color: var(--accent); font-weight: 600; display: block; margin-bottom: 3px; }
+
+.news { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 32px; }
+.news li { display: grid; grid-template-columns: 70px 1fr; gap: 10px; font-size: .92rem; padding: 2px 0; }
+.news time { font-family: var(--sans); font-size: .76rem; color: var(--faint); padding-top: 2px; }
+
+.pubhead { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; border-bottom: 1px solid var(--rule); margin-bottom: 4px; flex-wrap: wrap; }
+.pubhead h2 { border: 0; margin: 0; padding-bottom: 7px; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; padding-bottom: 6px; font-family: var(--sans); }
+.filters button { font: inherit; font-size: .74rem; border: 1px solid var(--rule); background: #fff; color: var(--muted); padding: 3px 10px; border-radius: 999px; cursor: pointer; }
+.filters button:hover { border-color: var(--fg); color: var(--fg); }
+.filters button[aria-pressed="true"] { background: var(--fg); color: #fff; border-color: var(--fg); }
+
+h3.sub { font-family: var(--sans); font-size: .76rem; font-weight: 600; color: var(--muted); margin: 12px 0 2px; }
+.pubs { list-style: none; padding: 0; margin: 0; }
+.pub { padding: 7px 0; transition: opacity .2s; }
+.pub.dim { opacity: .2; }
+.pub .t { font-weight: 600; line-height: 1.35; }
+.pub .a { font-size: .87rem; color: var(--muted); }
+.pub .a b { color: var(--fg); font-weight: 600; }
+.pub .v { font-family: var(--sans); font-size: .76rem; display: inline-flex; flex-wrap: wrap; gap: 2px 10px; margin-left: 8px; }
+.pub .venue { font-weight: 600; color: var(--fg); }
+.pub .award { color: var(--accent); font-weight: 600; }
+.pub .v a { color: var(--muted); text-decoration: none; }
+.pub .v a:hover { color: var(--accent); }
+.pub .s { display: block; font-size: .87rem; color: var(--muted); margin-top: 2px; }
+
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
+.items { list-style: none; padding: 0; margin: 0; }
+.items li { padding: 4px 0; font-size: .9rem; line-height: 1.45; }
+.items .h { font-weight: 600; }
+.items .d { color: var(--muted); }
+.meta { font-family: var(--sans); font-size: .76rem; color: var(--faint); margin-top: 4px; }
+
+footer { font-family: var(--sans); font-size: .74rem; color: var(--faint); border-top: 1px solid var(--rule); padding-top: 10px; }
+
+@media (max-width: 1100px) {
+  .themes { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 860px) {
+  .page { grid-template-columns: 1fr; }
+  aside { border-right: 0; border-bottom: 1px solid var(--rule); padding: 28px 16px 8px; }
+  .side-inner { position: static; }
+  main { padding: 24px 16px 32px; }
+  .news, .two { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .themes { grid-template-columns: 1fr; }
+  .pub .v { display: flex; margin-left: 0; margin-top: 2px; }
+}
+@media print {
+  .filters { display: none; }
+  .pub.dim { opacity: 1; }
+  .side-inner { position: static; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<aside>
+  <div class="side-inner">
+    <img src="https://avatars.githubusercontent.com/u/111243915?v=4" alt="Portrait of Adib Sakhawat" width="112" height="112">
+    <h1>Adib Sakhawat</h1>
+    <p class="role">NLP researcher<br>Islamic University of Technology (IUT), Bangladesh</p>
+    <ul class="links">
+      <li><a href="mailto:adibsakhawat@iut-dhaka.edu">Email</a></li>
+      <li><a href="https://scholar.google.com/citations?user=usvtpskAAAAJ">Google Scholar</a></li>
+      <li><a href="https://github.com/sakhadib">GitHub</a></li>
+      <li><a href="https://openreview.net/profile?id=~Adib_Sakhawat1">OpenReview</a></li>
+      <li><a href="https://www.semanticscholar.org/author/Adib-Sakhawat/2403988374">Semantic Scholar</a></li>
+      <li><a href="https://orcid.org/0009-0005-3549-8616">ORCID</a></li>
+      <li><a href="https://www.kaggle.com/sakhadib">Kaggle</a></li>
+      <li><a href="https://www.linkedin.com/in/sakhadib">LinkedIn</a></li>
+    </ul>
+    <div class="callout"><strong>Applying for PhD positions, Fall 2027.</strong> If my work overlaps with yours, I would be glad to hear from you at <a href="mailto:adibsakhawat@iut-dhaka.edu">adibsakhawat@iut-dhaka.edu</a>.</div>
+
+    <div class="side-block">
+      <h2>Education &amp; experience</h2>
+      <div class="row"><b>BSc in Software Engineering</b>, IUT<span>Graduated Oct 2026 · CGPA 3.84/4.00 · First Class with Honours</span></div>
+      <div class="row"><b>Undergraduate Researcher</b>, Systems and Software Lab, Dept. of CSE, IUT<span>2025 – 2026</span></div>
+      <div class="row"><b>Software Engineer (Intern)</b>, mADestic, Dhaka<span>2025 – 2026 · backend for a production retail ERP</span></div>
+    </div>
+    <div class="side-block">
+      <h2>Service</h2>
+      <div class="row"><b>Program Committee</b>, <a href="https://blp-workshop.github.io/organizers">BLP 2027</a><span>Workshop on Bangla Language Processing @ NAACL 2027</span></div>
+    </div>
+  </div>
+</aside>
+
+<main>
+  <section class="about" aria-label="About">
+    <p>I study what large language models can and cannot do in the places mainstream benchmarks skip: low-resource languages such as Bangla, figurative and legal text, and the political and safety behaviour of models once the language or the framing changes. I try to build datasets and evaluation protocols that could falsify a claim about model capability, not just confirm it.</p>
+    <p>My first-author paper on <a href="#p-ideo">ideological plasticity in LLMs</a> received the <strong>Best Paper Award at AACL-IJCNLP 2026</strong>. It argues that a model's political position is better described as a shape over contexts than as a single point.</p>
+  </section>
+
+  <section aria-labelledby="research">
+    <h2 id="research">Research</h2>
+    <div class="themes">
+      <div class="theme"><span class="num">01</span><h3>Multilingual &amp; low-resource NLP</h3><p>Bangla resources and benchmarks: a 10,361-idiom corpus, a corpus of legal acts from 1799 to 2025, and why models read idioms literally and retrieve unevenly across languages.</p></div>
+      <div class="theme"><span class="num">02</span><h3>LLM evaluation</h3><p>Evaluation built to test assumptions: what benchmarks actually measure, consistency in temporal reasoning, and game-based protocols for multi-turn behaviour.</p></div>
+      <div class="theme"><span class="num">03</span><h3>Safety in low-resource languages</h3><p>The gap between a model's ability to understand harmful content and its ability to contain it, in Bangla derogatory speech and adversarial dialogue.</p></div>
+      <div class="theme"><span class="num">04</span><h3>LLMs &amp; social science</h3><p>Measuring the political behaviour of language models with instruments from political science and psychometrics, treating ideology as a context-conditioned distribution.</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="news">
+    <h2 id="news">News</h2>
+    <ul class="news">
+      <li><time datetime="2026-11">Nov 2026</time><span><strong>Best Paper Award</strong> at AACL-IJCNLP 2026 for <a href="#p-ideo">LLM-Ideoplasticity</a>.</span></li>
+      <li><time datetime="2026-11">Nov 2026</time><span>Joined the Program Committee of <a href="https://blp-workshop.github.io/organizers">BLP 2027</a> (NAACL 2027).</span></li>
+      <li><time datetime="2026-10">Oct 2026</time><span>Graduated from IUT, First Class with Honours.</span></li>
+      <li><time datetime="2026">2026</time><span>Two papers accepted at EMNLP 2026 workshops (REALM, MRL).</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="pubs">
+    <div class="pubhead">
+      <h2 id="pubs">Publications</h2>
+      <div class="filters" role="group" aria-label="Filter publications by theme" hidden>
+        <button type="button" data-f="all" aria-pressed="true">All</button>
+        <button type="button" data-f="ml" aria-pressed="false">Multilingual</button>
+        <button type="button" data-f="ev" aria-pressed="false">Evaluation</button>
+        <button type="button" data-f="sf" aria-pressed="false">Safety</button>
+        <button type="button" data-f="ss" aria-pressed="false">Social science</button>
+      </div>
+    </div>
+
+    <h3 class="sub">Peer-reviewed</h3>
+    <ul class="pubs">
+      <li class="pub" id="p-ideo" data-t="ss ev ml">
+        <div class="t">LLM-Ideoplasticity: Measuring Ideological Plasticity in the Political Behavior of LLMs as a Context-Conditioned Distribution</div>
+        <div class="a"><b>Adib Sakhawat</b>, Syed Rifat Raiyan, Tahsin Islam, Takia Farhin, Hasan Mahmud, Md Kamrul Hasan <span class="v"><span class="venue">AACL-IJCNLP 2026</span><span class="award">Best Paper Award</span><a href="https://arxiv.org/abs/2606.28335">arXiv</a><a href="https://github.com/sakhadib/LLM-Ideoplasticity">code &amp; data</a></span></div>
+        <span class="s">Framing and language move a model's political position substantially, yet the cohort as a whole sits in a narrow band: a single point cannot summarise LLM political behaviour.</span>
+      </li>
+      <li class="pub" data-t="ml ev">
+        <div class="t">When Words Don't Mean What They Say: Figurative Understanding in Bengali Idioms</div>
+        <div class="a"><b>Adib Sakhawat</b>, Shamim Ara Parveen, Md Ruhul Amin, Tahera Khatun, Shamim Al Mahmud, Md Saiful Islam <span class="v"><span class="venue">LREC 2026</span><a href="https://doi.org/10.63317/546w2cys6m6t">paper</a><a href="https://www.kaggle.com/datasets/sakhadib/bangla-bagdhara">dataset</a></span></div>
+        <span class="s">10,361 idioms under a 19-field expert schema. Of 30 LLMs, none exceeds 50% accuracy at inferring figurative meaning; humans reach 83.4%.</span>
+      </li>
+      <li class="pub" data-t="sf ev">
+        <div class="t">AIDG: A Formal Decomposition of Information Extraction and Containment Asymmetries in Multi-Turn LLM Dialogue</div>
+        <div class="a"><b>Adib Sakhawat</b>, Fardeen Sadab, Rakin Shahriar <span class="v"><span class="venue">REALM @ EMNLP 2026</span><a href="https://arxiv.org/abs/2602.17443">arXiv</a><a href="https://github.com/sakhadib/AIDG">code</a></span></div>
+      </li>
+      <li class="pub" data-t="ml ev">
+        <div class="t">Two Emojis of Difference: What Multilingual Affective Generation Benchmarks Actually Measure</div>
+        <div class="a">Fardeen Sadab, <b>Adib Sakhawat</b> <span class="v"><span class="venue">MRL @ EMNLP 2026</span><a href="https://arxiv.org/abs/2609.29445">arXiv</a></span></div>
+      </li>
+      <li class="pub" data-t="sf ev">
+        <div class="t">AREG: Adversarial Resource Extraction Game for Evaluating Persuasion and Resistance in Large Language Models</div>
+        <div class="a"><b>Adib Sakhawat</b>, Fardeen Sadab, Tamjid Hasan Fahim <span class="v"><span class="venue">MusIML @ ICML 2026</span><a href="https://openreview.net/forum?id=1bnYMgH5gi">OpenReview</a><a href="https://github.com/sakhadib/AREG">code</a></span></div>
+      </li>
+    </ul>
+
+    <h3 class="sub">Preprints</h3>
+    <ul class="pubs">
+      <li class="pub" data-t="ml ev">
+        <div class="t">Literal Lock-In: How Test Language Shifts Literal Attraction in Typed Decision Models on Bengali Idioms</div>
+        <div class="a"><b>Adib Sakhawat</b>, Syed Rifat Raiyan <span class="v"><a href="https://arxiv.org/abs/2610.22526">arXiv</a><a href="https://github.com/sakhadib/literal-lock-in">code &amp; data</a><a href="https://sakhadib.github.io/literal-lock-in">project page</a></span></div>
+      </li>
+      <li class="pub" data-t="ev">
+        <div class="t">Evaluating Temporal Reasoning in Large Language Models: Event Temporal Relation Extraction with Allen's Interval Algebra, Logical Consistency, and Relative Time in Narratives</div>
+        <div class="a"><b>Adib Sakhawat</b>, Fardeen Sadab, Tamjid Hasan Fahim, and 9 others <span class="v"><a href="https://arxiv.org/abs/2610.17402">arXiv</a><a href="https://github.com/sakhadib/llm-temporal-interval-reasoning">code</a></span></div>
+      </li>
+      <li class="pub" data-t="sf ml">
+        <div class="t">Aligned in Form, Not in Meaning: The Comprehension–Containment Decoupling of LLM Safety in Low-Resource Bangla Derogatory Speech</div>
+        <div class="a">Shadab Bin Habib, A K M Ferdous Reza Habib, Subarno Neel, <b>Adib Sakhawat</b> <span class="v"><a href="https://arxiv.org/abs/2608.02941">arXiv</a></span></div>
+      </li>
+      <li class="pub" data-t="ml">
+        <div class="t">BLAD: A Historically Contextualized, Multilingual Dataset of Bangladeshi Legal Acts (1799 to 2025)</div>
+        <div class="a"><b>Adib Sakhawat</b> <span class="v"><a href="https://arxiv.org/abs/2607.17111">arXiv</a><a href="https://doi.org/10.34740/KAGGLE/DSV/12511542">dataset</a><a href="https://github.com/sakhadib/Bangladesh-Legal-Acts-Dataset">code</a></span></div>
+      </li>
+      <li class="pub" data-t="ml">
+        <div class="t">Hubness, Not Anisotropy, Drives Cross-Lingual Retrieval Asymmetry in Multilingual Embedding Models</div>
+        <div class="a"><b>Adib Sakhawat</b>, Fardeen Sadab, Atik Shahriar <span class="v"><a href="https://arxiv.org/abs/2605.26575">arXiv</a><a href="https://github.com/sakhadib/HubProvrbs">code</a></span></div>
+      </li>
+      <li class="pub" data-t="ss ev">
+        <div class="t">Political Alignment in Large Language Models: A Multidimensional Audit of Psychometric Identity and Behavioral Bias</div>
+        <div class="a"><b>Adib Sakhawat</b>, Tahsin Islam, Takia Farhin, Syed Rifat Raiyan, Hasan Mahmud, Md Kamrul Hasan <span class="v"><a href="https://arxiv.org/abs/2601.06194">arXiv</a><a href="https://github.com/sakhadib/PolAlignLLM">code</a></span></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Datasets</h2>
+      <ul class="items">
+        <li><a class="h" href="https://www.kaggle.com/datasets/sakhadib/bangla-bagdhara">Bangla Bagdhara</a> <span class="d">— 10,361 Bengali idioms, 19-field annotation schema, benchmark and human-evaluation protocol.</span></li>
+        <li><a class="h" href="https://doi.org/10.34740/KAGGLE/DSV/12511542">Bangladesh Legal Acts Dataset</a> <span class="d">— 1,484 acts (1799–2025), 35,633 sections, bilingual, annotated with the legal system in force.</span></li>
+      </ul>
+      <p class="meta">CC BY 4.0 · 5,900+ downloads on Kaggle</p>
+    </div>
+    <div>
+      <h2>Selected engineering</h2>
+      <ul class="items">
+        <li><a class="h" href="https://github.com/sakhadib/Reko">Reko</a> <span class="d">— Rust CLI: every function in a repo, 15 languages, one IR, byte-exact reconstruction, semantic search.</span></li>
+        <li><a class="h" href="https://github.com/sakhadib/ishkaponai">ISHKAPON AI</a> <span class="d">— local-first tutor; every number is computed in a sandboxed Python runtime, not recalled by the model.</span></li>
+        <li><a class="h" href="https://github.com/sakhadib/Pi-Daytona-ChatBot">Pi Daytona Chat</a> <span class="d">— coding agent with an isolated sandbox per conversation and every tool call logged.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>© 2026 Adib Sakhawat</footer>
+</main>
+
+</div>
+<script>
+(function () {
+  var f = document.querySelector('.filters'); if (!f) return;
+  f.hidden = false;
+  var pubs = document.querySelectorAll('.pub');
+  f.addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    f.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+    var k = b.dataset.f;
+    pubs.forEach(function (p) {
+      p.classList.toggle('dim', !(k === 'all' || (p.dataset.t || '').split(' ').indexOf(k) > -1));
+    });
+  });
+})();
+</script>
+</body>
+</html>
