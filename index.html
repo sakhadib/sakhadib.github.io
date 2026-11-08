@@ -153,6 +153,21 @@ h3.sub { font-family: var(--sans); font-size: .76rem; font-weight: 600; color: v
 
 footer { font-family: var(--sans); font-size: .74rem; color: var(--faint); border-top: 1px solid var(--rule); padding-top: 10px; }
 
+
+/* leadership */
+.lead { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.org { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; background: #fff; }
+.org h3 { font-size: .95rem; font-weight: 600; margin: 0 0 8px; line-height: 1.3; }
+.org h3 small { display: block; font-family: var(--sans); font-size: .72rem; font-weight: 400; color: var(--faint); margin-top: 2px; }
+.steps { list-style: none; margin: 0; padding: 0 0 0 12px; border-left: 2px solid var(--rule); }
+.steps li { position: relative; font-size: .86rem; line-height: 1.35; padding: 2px 0 6px; }
+.steps li::before { content: ""; position: absolute; left: -17px; top: 7px; width: 8px; height: 8px; border-radius: 50%; background: #fff; border: 2px solid #c9c2b5; }
+.steps li.top::before { background: var(--accent); border-color: var(--accent); }
+.steps li.top b { color: var(--accent); }
+.steps li b { font-weight: 600; }
+.steps li span { display: block; font-family: var(--sans); font-size: .72rem; color: var(--faint); }
+@media (max-width: 1100px) { .lead { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .lead { grid-template-columns: 1fr; } }
 @media (max-width: 1100px) { .themes { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 860px) {
   .page { grid-template-columns: 1fr; }
@@ -399,6 +414,40 @@ footer { font-family: var(--sans); font-size: .74rem; color: var(--faint); borde
         </div>
       </li>
     </ul>
+  </section>
+
+  <section aria-labelledby="lead">
+    <h2 id="lead">Leadership &amp; volunteering</h2>
+    <div class="lead">
+      <div class="org">
+        <h3>IUT Computer Society<small>University computing society</small></h3>
+        <ul class="steps">
+          <li class="top"><b>Vice President</b><span>2025 – 2026</span></li>
+          <li><b>Assistant Director of Technical Affairs</b><span>2024 – 2025 · Technical Lead, CodeRush 2.0</span></li>
+          <li><b>Machine Learning Team Member</b><span>2023</span></li>
+        </ul>
+      </div>
+      <div class="org">
+        <h3>IUT Al-Fazari Interstellar Society<small>University astronomy club</small></h3>
+        <ul class="steps">
+          <li class="top"><b>Vice President</b><span>2025 – 2026</span></li>
+          <li><b>Joint Secretary</b><span>2024 – 2025</span></li>
+          <li><b>Administrative Member</b><span>2023</span></li>
+        </ul>
+      </div>
+      <div class="org">
+        <h3>IEEE Computer Society Chapter, IUT<small>Student chapter</small></h3>
+        <ul class="steps">
+          <li class="top"><b>Vice Chair</b><span>2025 – 2026</span></li>
+        </ul>
+      </div>
+      <div class="org">
+        <h3>Bangladesh Red Crescent Society<small>COVID-19 response</small></h3>
+        <ul class="steps">
+          <li class="top"><b>Volunteer</b><span>2019 – 2021 · trained in first aid and outbreak management; volunteered at sites across the pandemic</span></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <section class="two">
