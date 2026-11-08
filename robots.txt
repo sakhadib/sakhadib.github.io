@@ -1,0 +1,15 @@
+# https://sakhadib.github.io
+User-agent: *
+Allow: /
+
+# AI search and answer engines are welcome to read and cite this site.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://sakhadib.github.io/sitemap.xml
