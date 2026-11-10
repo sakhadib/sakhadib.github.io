@@ -791,7 +791,7 @@ footer { font-family: var(--sans); font-size: .74rem; color: var(--faint); borde
     fetch('https://sakhadib-academic.goatcounter.com/counter/TOTAL.json')
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (d) {
-        if (!d || !d.count) return;
+        if (!d || !d.count || !parseInt(String(d.count).replace(/\D/g, ''), 10)) return;
         n.textContent = d.count;
         el.hidden = false;
       })
