@@ -32,6 +32,8 @@
 <link rel="me" href="https://github.com/sakhadib">
 <link rel="me" href="https://orcid.org/0009-0005-3549-8616">
 <link rel="preconnect" href="https://avatars.githubusercontent.com">
+<link rel="preconnect" href="https://sakhadib-academic.goatcounter.com">
+<link rel="preconnect" href="https://gc.zgo.at">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -58,7 +60,7 @@
     "@id": "https://sakhadib.github.io/#website"
    },
    "dateCreated": "2026-11-08",
-   "dateModified": "2026-11-08",
+   "dateModified": "2026-11-10",
    "mainEntity": {
     "@id": "https://sakhadib.github.io/#person"
    },
@@ -361,6 +363,10 @@ h1 { font-size: 1.75rem; font-weight: 600; line-height: 1.15; margin: 0 0 6px; l
 .links a { display: flex; align-items: center; gap: 7px; text-decoration: none; color: var(--fg); background: #fff; border: 1px solid var(--rule); border-radius: 7px; padding: 5px 8px; transition: border-color .15s, box-shadow .15s; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .links a:hover { border-color: #cfc8bb; box-shadow: 0 1px 3px rgba(0,0,0,.06); color: var(--fg); }
 .links svg.i { width: 15px; height: 15px; }
+.visits { display: inline-flex; align-items: center; gap: 7px; font-family: var(--sans); font-size: .78rem; color: var(--muted); background: #fff; border: 1px solid var(--rule); border-radius: 999px; padding: 4px 11px; margin: -6px 0 18px; }
+.visits svg.i { width: 14px; height: 14px; color: var(--accent); }
+.visits b { color: var(--fg); font-weight: 600; font-variant-numeric: tabular-nums; }
+.visits[hidden] { display: none; }
 .callout { padding: 10px 12px; border-left: 3px solid var(--accent); background: var(--accent-soft); font-family: var(--sans); font-size: .82rem; line-height: 1.5; margin-bottom: 22px; }
 .callout strong { font-weight: 600; }
 .side-block { margin-bottom: 18px; font-size: .9rem; }
@@ -486,6 +492,7 @@ footer { font-family: var(--sans); font-size: .74rem; color: var(--faint); borde
     <symbol id="i-linkedin" viewBox="0 0 24 24"><rect width="24" height="24" rx="4" fill="#0A66C2"/><circle cx="7" cy="7" r="1.9" fill="#fff"/><rect x="5.3" y="9.6" width="3.4" height="9.4" fill="#fff"/><path fill="#fff" d="M10.8 9.6h3.2v1.4c.5-.9 1.7-1.7 3.4-1.7 3.1 0 3.8 2 3.8 4.6V19h-3.4v-4.4c0-1.2-.1-2.6-1.7-2.6s-1.9 1.2-1.9 2.5V19h-3.4z"/></symbol>
     <symbol id="i-arxiv" viewBox="0 0 24 24"><path fill="#B31B1B" d="M3.8423 0a1.0037 1.0037 0 0 0-.922.6078c-.1536.3687-.0438.6275.2938 1.1113l6.9185 8.3597-1.0223 1.1058a1.0393 1.0393 0 0 0 .003 1.4229l1.2292 1.3135-5.4391 6.4444c-.2803.299-.4538.823-.2971 1.1986a1.0253 1.0253 0 0 0 .9585.635.9133.9133 0 0 0 .6891-.3405l5.783-6.126 7.4902 8.0051a.8527.8527 0 0 0 .6835.2597.9575.9575 0 0 0 .8777-.6138c.1577-.377-.017-.7502-.306-1.1407l-7.0518-8.3418 1.0632-1.13a.9626.9626 0 0 0 .0089-1.3165L4.6336.4639s-.3733-.4535-.768-.463zm0 .272h.0166c.2179.0052.4874.2715.5644.3639l.005.006.0052.0055 10.169 10.9905a.6915.6915 0 0 1-.0072.945l-1.0666 1.133-1.4982-1.7724-8.5994-10.39c-.3286-.472-.352-.6183-.2592-.841a.7307.7307 0 0 1 .6704-.4401Zm14.341 1.5701a.877.877 0 0 0-.6554.2418l-5.6962 6.1584 1.6944 1.8319 5.3089-6.5138c.3251-.4335.479-.6603.3247-1.0292a1.1205 1.1205 0 0 0-.9763-.689zm-7.6557 12.2823 1.3186 1.4135-5.7864 6.1295a.6494.6494 0 0 1-.4959.26.7516.7516 0 0 1-.706-.4669c-.1119-.2682.0359-.6864.2442-.9083l.0051-.0055.0047-.0055z"/></symbol>
     <symbol id="i-acl" viewBox="0 0 68 46"><path fill="#ed1c24" fill-rule="evenodd" d="m41.977553 0v3.0158h-34.4906476-7.4869054v7.48499 27.97788 7.52133h7.4869054 42.0138966 7.486906 11.012292v-15.00632h-11.012292v-20.49289-7.48499c0-1.57369 0-1.25402 0-3.0158zm-26.967398 17.98578h26.967398v13.0079h-26.967398z"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M1.5 12S5.5 4.5 12 4.5 22.5 12 22.5 12 18.5 19.5 12 19.5 1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3.2"/></g></symbol>
     <symbol id="i-paper" viewBox="0 0 24 24"><path d="M14 2.5H6.5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 2.5V8h5.5M8.5 13h7M8.5 17h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
     <symbol id="i-data" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></g></symbol>
     <symbol id="i-web" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.7 4 6 4 9.5s-1.4 6.8-4 9.5c-2.6-2.7-4-6-4-9.5s1.4-6.8 4-9.5z"/></g></symbol>
@@ -510,6 +517,7 @@ footer { font-family: var(--sans); font-size: .74rem; color: var(--faint); borde
       <li><a rel="me" href="https://www.kaggle.com/sakhadib"><svg class="i"><use href="#i-kaggle"/></svg>Kaggle</a></li>
       <li><a rel="me" href="https://www.linkedin.com/in/sakhadib"><svg class="i"><use href="#i-linkedin"/></svg>LinkedIn</a></li>
     </ul>
+    <p class="visits" id="visits" hidden><svg class="i" aria-hidden="true"><use href="#i-eye"/></svg><span><b id="visit-count">0</b> visits</span></p>
     <div class="callout"><strong>Applying for PhD positions, Fall 2027.</strong> If my work overlaps with yours, I would be glad to hear from you at <a href="mailto:adibsakhawat@iut-dhaka.edu">adibsakhawat@iut-dhaka.edu</a>.</div>
 
     <div class="side-block">
@@ -756,7 +764,7 @@ footer { font-family: var(--sans); font-size: .74rem; color: var(--faint); borde
     </div>
   </section>
 
-  <footer>© 2026 Adib Sakhawat · Last updated <time datetime="2026-11-08">8 November 2026</time></footer>
+  <footer>© 2026 Adib Sakhawat · Last updated <time datetime="2026-11-10">10 November 2026</time></footer>
 </main>
 
 </div>
@@ -773,6 +781,24 @@ footer { font-family: var(--sans); font-size: .74rem; color: var(--faint); borde
       p.classList.toggle('dim', !(k === 'all' || (p.dataset.t || '').split(' ').indexOf(k) > -1));
     });
   });
+})();
+</script>
+<script data-goatcounter="https://sakhadib-academic.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+(function () {
+  var el = document.getElementById('visits'), n = document.getElementById('visit-count');
+  function show() {
+    fetch('https://sakhadib-academic.goatcounter.com/counter/TOTAL.json')
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (!d || !d.count) return;
+        n.textContent = d.count;
+        el.hidden = false;
+      })
+      .catch(function () {});
+  }
+  if (document.readyState === 'complete') setTimeout(show, 800);
+  else window.addEventListener('load', function () { setTimeout(show, 800); });
 })();
 </script>
 </body>
